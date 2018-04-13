@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DDKOIN </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="#">
+    <meta name="keywords" content="DDKOIN">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/css/bootstrap.min.css">
+       <!-- sweet alert framework -->
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/css/sweetalert.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="icon/themify-icons/themify-icons.css">
+    
+        <!-- animation nifty modal window effects css -->
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+    
+       <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    
+        <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="icon/font-awesome/css/font-awesome.min.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+</head>
+
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" src="images/logo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+                            <li>
+                                <a class="main-search morphsearch-search" href="#">
+                                    <!-- themify icon -->
+                                    <i class="ti-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                        <i class="ti-fullscreen"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                        
+                            <li>
+                                <a href="#!">
+                                 <button class="btn btn-sm btn-primary ">Available ETP 2026.28 </button>
+                              
+                                
+                                </a>
+                            </li>
+                        
+                        
+                             <li>
+                                <a href="#!">
+                                 <button class="btn btn-sm btn-primary ">2026.28 ETP</button>
+                              
+                                
+                                </a>
+                            </li>
+                             <li class="header-notification">
+                             
+                             <a href="#">
+                         <button type="button" class="btn btn-sm btn-primary btn-round waves-effect md-trigger" data-modal="freeze"><i class="fa fa-asterisk"></i> Freeze</button>
+                                   <button type="button" class="btn btn-sm btn-primary btn-round waves-effect md-trigger" data-modal="send"><i class="fa fa-paper-plane"></i> Send</button>
+                         
+                         </a>
+                        
+                        </li>
+                           
+                            <li class="user-profile header-notification">
+                                <a href="#!">
+                                        <img src="images/user.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <span>Paul Mccartney</span>
+                                        <i class="ti-angle-down"></i>
+                                    </a>
+                                <ul class="show-notification profile-notification">
+                                    <li>
+                                        <a href="#!">
+                                                <i class="ti-settings"></i> Settings
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-profile.html">
+                                                <i class="ti-user"></i> Profile
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="email-inbox.html">
+                                                <i class="ti-email"></i> My Messages
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth-lock-screen.html">
+                                                <i class="ti-lock"></i> Lock Screen
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="auth-normal-sign-in.html">
+                                        <i class="ti-layout-sidebar-left"></i> Logout
+                                    </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- search -->
+                        <div id="morphsearch" class="morphsearch">
+                            <form class="morphsearch-form">
+                                <input class="morphsearch-input" type="search" placeholder="Search..." />
+                                <button class="morphsearch-submit" type="submit">Search</button>
+                            </form>
+                            <!-- /morphsearch-content -->
+                            <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
+                        </div>
+                        <!-- search end -->
+                    </div>
+                </div>
+            </nav>
+
+           
+            <!-- Sidebar inner chat end-->
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="">
+                            
+                                <div class="main-menu-header">
+                                   <img class="img-100 img-circle" src="images/user.jpg">
+                                    <div class="user-details">
+                                         <span id="more-details">paul mccartney<i class="ti-angle-down"></i></span>
+                                       <span>16313739661670634666E</span>
+                                    </div>
+                                </div>
+
+                                <div class="main-menu-content">
+                                    <ul>
+                                        <li class="more-details">
+                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          <!--  <div class="pcoded-search">
+                                <span class="searchbar-toggle">  </span>
+                                <div class="pcoded-search-box ">
+                                    <input type="text" placeholder="Search">
+                                    <span class="search-icon"><i class="ti-search" aria-hidden="true"></i></span>
+                                </div>
+                            </div>-->
+                         
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li>
+                                    <a href="index.html">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li >
+                                    <a href="forging.html">
+                                        <span class="pcoded-micon"><i class="ti-layout"></i><b>P</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.page_layout.main">Forging</span>
+                                       
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                  
+                                </li>
+                                
+                                
+                             
+                                 <li>
+                                    <a href="blockchain.html">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.navigate.main">Blockchain</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="explorer.html">
+                                        <span class="pcoded-micon"><i class="ti-view-grid"></i><b>W</b></span>
+                                        <span class="pcoded-mtext"  data-i18n="nav.widget.main">Explorer</span>
+                                       
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                
+                                  <li class=" active pcoded-trigger">
+                                    <a href="stake.html">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Stake</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                
+                    
+                    
+                     
+                    
+                         
+                        
+                      
+                         
+                           
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+
+                                    <div class="page-body">
+                                        <div class="row">
+                                        <div class="col-md-12"><h3 class="text-left txt-primary">Stake</h3>       <br></div>
+                                        
+                                 
+                        
+                                            
+                                             <div class="col-md-12">
+                                                           <div class="card">
+                                            <div class="card-header">
+                                                <h5>Laters Blocks</h5>
+                                                
+                                                <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
+                                            </div>
+                                            <div class="card-block">
+                                                <div class="dt-responsive table-responsive">
+                                                <table id="simpletable" class="table table-striped table-bordered nowrap table-styling">
+                                                                <thead>
+                                                                    <tr class="table-primary">
+                                                                        <th>Freeze Amount</th>
+                                                                        <th>Status</th>
+                                                                        <th>Insert Time</th>
+                                                                        <th>Mature Time</th>
+                                                                        <th>Month Remain</th>
+                                                                        <th>Recipient</th>
+                                                                          <th>Action</th>
+                                                                        
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                  <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                  <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                  <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                  <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                   <tr>
+                                                                        <td>1200</td>
+                                                                        <td>Inactive</td>
+                                                                        <td>11/01/2018 12:40:53</td>
+                                                                        <td>11/01/2018 12:46:53</td>
+                                                                        <td>0</td>
+                                                                        <td>-</td>
+                                                                         <td><button class="btn btn-primary btn-mini"><i class="fa fa-eye"></i></button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>Freeze Amount</th>
+                                                                        <th>Status</th>
+                                                                        <th>Insert Time</th>
+                                                                        <th>Mature Time</th>
+                                                                        <th>Month Remain</th>
+                                                                        <th>Recipient</th>
+                                                                         <th>Action</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+
+                           <!--     <div id="styleSelector">
+
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- modal popup -->
+    
+                                                             <div class="col-sm-12">
+                                                             
+                                                             
+                                                                   <!-- ANGLE OFFSET AND ARC start -->
+                                      
+                                            <!-- ANGLE OFFSET AND ARC Ends -->
+                                      
+                                                        <div class="animation-model">
+                                                          
+                                                   
+                                                            <div class="md-modal md-effect-11" id="freeze">
+                                                                <div class="md-content">
+                                                                    <h3>FREEZE ETP</h3>
+                                                                    <div>
+                                                                        <p class="text-center">Please enter the ETP Amount that you would like to freeze:</p>
+                                                                        
+                                                                        <div class="form-group row">
+<div class="col-sm-12">
+<input type="text" class="form-control form-control-white" placeholder="Freeze ETP Amount">
+<h6 class="pull-right">Fee: 1 ETP</h6>
+</div>
+</div>
+                                                                        
+                                                                       <center> <button type="button" class="btn btn-primary waves-effect ">Confirm</button>
+                                                                            <button type="button" class="btn btn-primary waves-effect md-close">Close</button></center>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                  <div class="md-modal md-effect-6" id="send">
+                                                                <div class="md-content">
+                                                                    <h3>SEND FREEZE ORDER</h3>
+                                                                    <div>
+                                                                        <p class="text-center">Please enter the Recipient Address to which this order send:</p>
+                                                                       <div class="bg-primary p-10 ">8472012613634086045</div>
+                                                                        <p class="text-center">Recipient Address</p>
+                                                                      <center> <button type="button" class="btn btn-primary waves-effect ">Confirm</button>
+                                                                            <button type="button" class="btn btn-primary waves-effect md-close">Close</button></center>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                               
+                                                            <!--animation modal  Dialogs ends -->
+                                                            <div class="md-overlay"></div>
+                                                        </div>
+                                                   
+                                            </div>
+                                            
+                                            
+                                            
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="../files/assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="bower_components/modernizr/js/modernizr.js"></script>
+    
+    <!-- data-table js -->
+    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="pages/data-table/js/jszip.min.js"></script>
+    <script src="pages/data-table/js/pdfmake.min.js"></script>
+    <script src="pages/data-table/js/vfs_fonts.js"></script>
+    <script src="bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- am chart -->
+    <script src="pages/widget/amchart/amcharts.min.js"></script>
+    <script src="pages/widget/amchart/serial.min.js"></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="bower_components/chart.js/js/Chart.js"></script>
+    <!-- Todo js -->
+    <script type="text/javascript" src="pages/todo/todo.js "></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src="bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+    
+    
+        <!-- sweet alert js -->
+    <script type="text/javascript" src="bower_components/sweetalert/js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <!-- sweet alert modal.js intialize js -->
+    <!-- modalEffects js nifty modal window effects -->
+    <script type="text/javascript" src="js/modalEffects.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <!-- Custom js -->
+      <script src="pages/data-table/js/data-table-custom.js"></script>
+    <script type="text/javascript" src="pages/dashboard/custom-dashboard.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script src="js/pcoded.min.js"></script>
+    <script src="js/demo-dark.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+</body>
+
+</html>
